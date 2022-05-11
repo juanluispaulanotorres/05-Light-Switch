@@ -1,0 +1,7 @@
+<div>
+    <app-semaforo [colorSeleccionado]="colorRecibido"></app-semaforo>
+</div>
+
+<div>
+    <app-controlador (emisor)="recibirColor($event)"></app-controlador>
+</div>

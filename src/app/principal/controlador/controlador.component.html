@@ -1,0 +1,18 @@
+<h1> <u>Controlador</u></h1>
+
+<div fxLayout="row" fxLayoutGap="10">
+    <div>
+        <select id="colores" name="colores" [(ngModel)]="colorSeleccionado" (change)="modificaSelect()" [disabled]="!marcado">
+            <option *ngFor="let color of colores">
+                {{ color }}
+            </option>
+        </select>
+    </div>
+
+    <div fxLayout="row">
+        <input type="checkbox" name="switch" [(ngModel)]="marcado" (change)="apagado()">
+
+        <label [ngStyle]="{'font-weight': marcado ? 'bolder': ''}">Encendido</label>/
+        <label [ngStyle]="{'font-weight': marcado ? '': 'bolder'}">Apagado</label>
+    </div>
+</div>

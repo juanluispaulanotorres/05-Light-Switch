@@ -1,0 +1,50 @@
+div#semaforo {
+    background-color: #3C3B40;
+    height: 200px;
+    width: 70px;
+}
+
+div#rojo, #amarillo, #verde {
+    width: 72%;
+    border-radius: 50%;
+}
+
+.apagado {
+    background-color: #BBBAB7;
+}
+
+.rojo {
+    background-color: #B71C1C;
+    box-shadow: 0px 0px 25px 10px #B71C1C;
+    animation-name: rojo;
+    animation-duration: 1s;
+}
+
+@keyframes rojo {
+    from {background-color: #BBBAB7;}
+    to {background-color: #B71C1C;}
+}
+
+.amarillo {
+    background-color: #F3CB21;
+    box-shadow: 0px 0px 25px 10px #F3CB21;
+    animation-name: amarillo;
+    animation-duration: 1s;
+}
+
+@keyframes amarillo {
+    from {background-color: #BBBAB7;}
+    to {background-color: #F3CB21;}
+}
+
+.verde {
+    background-color: #147F3B;
+    box-shadow: 0px 0px 25px 10px #147F3B;
+    animation-name: verde;
+    animation-duration: 1s;
+}
+
+@keyframes verde {
+    from {background-color: #BBBAB7;}
+    to {background-color: #147F3B;}
+}

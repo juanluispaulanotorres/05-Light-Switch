@@ -1,0 +1,5 @@
+<div id="semaforo" fxLayout="column" fxLayoutAlign="space-around center" >
+    <div id="rojo" fxFlex="25" [ngClass]="{rojo: colorSeleccionado == 'rojo', apagado: colorSeleccionado != 'rojo'}"></div>
+    <div id="amarillo" fxFlex="25" [ngClass]="{amarillo: colorSeleccionado == 'amarillo', apagado: colorSeleccionado != 'amarillo'}"></div>
+    <div id="verde" fxFlex="25" [ngClass]="{verde: colorSeleccionado == 'verde', apagado: colorSeleccionado != 'verde'}"></div>
+</div>
